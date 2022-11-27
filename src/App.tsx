@@ -1,7 +1,14 @@
-import "./shared/styles/index.css";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes";
 
 function App() {
-  return <div className="App">Hello world</div>;
+  return (
+    <div>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
