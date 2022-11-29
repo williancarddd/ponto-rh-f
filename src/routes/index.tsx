@@ -1,16 +1,16 @@
 import { Button } from "@mui/material";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { useAppThemeContext } from "../shared/contexts/ThemeContext";
+import useDrawerAtom from "../shared/hooks/useDrawerAtom";
 
 export default function AppRoutes() {
-  const { toggleTheme } = useAppThemeContext();
+  const { toggleDrawer } = useDrawerAtom();
   return (
     <Routes>
       <Route
         path="/initial-page"
         element={
-          <Button variant="contained" color="secondary" onClick={toggleTheme}>
-            Teste
+          <Button variant="contained" color="secondary" onClick={toggleDrawer}>
+            Toggle bar
           </Button>
         }
       />

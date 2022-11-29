@@ -8,6 +8,7 @@
     "@mui/icons-material": "^5.10.15",
     "@mui/material": "^5.10.15",
     "@mui/system": "^5.10.15",
+    "jotai": "^1.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "6",
